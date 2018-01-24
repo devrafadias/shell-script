@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+# meu_script.sh - Meu primeiro script
+#
+# Autor: Marcos Castro <mcastrosouza@live.com>
+#
+# ---------------------------------------------------------------------
+# Esse programa recebe como parâmetro o nome de usuário e retorna
+# o nome completo do usuário na saída padrão.
+#
+# Exemplo:
+# 	$ ./meu_script.sh marcoscastro
+#	Marcos Castro de Souza
+#
+#
+# Histórico:
+# 	v1.0 2016-02-26, Marcos Castro:
+#		- Versão melhorada no quesito X
+#
+# Licença: GPL

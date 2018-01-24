@@ -1,0 +1,13 @@
+#!/bin/bash
+
+MENSAGEM_AJUDA="Uso: meu_script [OPÇÃO]... [ARQUIVO]..."
+VERSAO="Versão 1.0"
+
+if test "$1" = "-h"
+then
+	echo "$MENSAGEM_AJUDA"
+	exit 0
+elif test "$1" = "-V"
+then
+	echo "$VERSAO"
+fi

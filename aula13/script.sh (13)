@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# Função recursiva que calcula a potência de um número
+
+# exemplo de chamada: script.sh 2 10
+# onde 2 é a base e 10 é o expoente
+
+function pot() {
+	if [ "$2" -eq "0" ]; then
+		return 1
+	fi
+	pot $1 $(( $2 - 1 ))
+	return $(( $1 * $? ))
+}
+
+# testa se passou dois parâmetros
+if [ -z "$1" ] || [ -z "$2" ]
+then
+	echo "Parametros insuficientes!"
+	echo "Execute: script.sh <base> <expoente>"
+	echo "script.sh 2 10"
+# verifica se as variáveis são inteiras
+elif (expr $1 + 1 > /dev/null 2> /dev/null) && (expr $2 + 1 > /dev/null 2> /dev/null)
+then
+	pot $1 $2
+	echo "$?"
+else
+	echo "Utilize somente números inteiros."
+	echo "script.sh <base> <expoente>"
+	echo "Exemplo: script.sh 2 10"
+fi

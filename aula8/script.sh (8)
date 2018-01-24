@@ -1,0 +1,5 @@
+#!/bin/bash
+ 
+texto="www.geeksbr.com"
+texto=$(echo $texto | tr a-z A-Z)
+echo "$texto"

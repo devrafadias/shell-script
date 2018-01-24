@@ -1,0 +1,6 @@
+#!/bin/bash
+
+posts=`lynx -dump -nolist http://www.geeksbr.com \
+			| grep '^[A-Z]'`
+
+echo "$posts"

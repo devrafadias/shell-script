@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+# script.sh
+#
+# Autor: Marcos Castro <mcastrosouza@live.com>
+#
+# Esse script utiliza dois comandos:
+#	1) ls - lista os arquivos
+#	2) mkdir - cria um diretório
+#
+
+
+# Lista os arquivos e diretórios
+ls
+
+mkdir python # Cria um diretório chamado python
