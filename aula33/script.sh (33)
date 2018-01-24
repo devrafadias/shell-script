@@ -1,9 +1,0 @@
-#!/bin/bash
-
-usuario=`id -u`
-if [ "$usuario" == "0" ]
-then
-	echo "Usuário é root."
-else
-	echo "Usuário não é root."
-fi
